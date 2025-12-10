@@ -15,7 +15,7 @@ console.log(document.URL)
 console.log(document.domain)
 
 // 5. Imprime todos los nodos de imagen.
-console.log(document.childNodes)
+console.log(document.images)
 
 // 6. Sustituye el atributo "src" de todas las imágenes por este "https://media.giphy.com/media/2v170e71aanfi/giphy.gif"
 const allImages = document.querySelectorAll("img")
@@ -26,7 +26,6 @@ allImages.forEach(image => {
 // *Premium:*
 
 // 7. Cambia el fondo de todos los `infocard-lg-data text-muted` para todos los Pokimon voladores `itype flying`
-const allInfocardTextMuted = document.querySelectorAll(".text-muted")
 const allTextFlying = document.querySelectorAll(".flying")
 allTextFlying.forEach(flying => {
     flying.parentElement.parentElement.style.backgroundColor = "#9999FF"
